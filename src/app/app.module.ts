@@ -3,20 +3,21 @@ import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
-import { HelloComponent } from './hello/hello.component';
-import { WelcomeComponent } from './welcome/welcome.component';
-import { DayComponent } from './day/day.component';
+import { HelloModule } from './hello/hello.module';
+import { WelcomeModule } from './welcome/welcome.module';
+import { DayModule } from './day/day.module';
+
 
 @NgModule({
   declarations: [
-    AppComponent,
-    HelloComponent,
-    WelcomeComponent,
-    DayComponent
+    AppComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    HelloModule,
+    WelcomeModule,
+    DayModule
   ],
   providers: [],
   bootstrap: [AppComponent]

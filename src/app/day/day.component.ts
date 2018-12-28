@@ -7,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DayComponent implements OnInit {
 
-  currentDay : any ;
-  constructor() { 
-    this.currentDay = new Date();
-  }
+  constructor() { }
 
   ngOnInit() {
   }
